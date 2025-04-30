@@ -43,5 +43,3 @@ This version of CrossLife is fully frontend and stores data locally in the user'
 - Voice input or keyboard shortcuts for quicker interaction
 
 ---
-
-CrossLife is designed to be a no-friction, privacy-friendly tool to help people stay consistent and motivated in forming habits—no account required.
