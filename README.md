@@ -1,61 +1,47 @@
-# CrossLife – Habit Tracker for Everyone
+# CrossLife – Web-Based Habit Tracker
 
 ## Why This App?
 
-Building good habits is hard enough—your app shouldn't make it harder.  
-**CrossLife** is a simple, calming habit tracker that works on **both mobile and web**, so you can stay on track wherever you are.
+CrossLife is a lightweight, browser-based habit tracker built with simplicity and accessibility in mind. It helps users build better daily routines by allowing them to add habits, mark them as completed, and visualize their progress—all without needing an account or internet connection.
 
-With CrossLife, you can:
-- Add your personal daily habits
-- Mark them as complete with one tap
-- See your streaks and progress at a glance
-- Feel motivated with kind, random quotes when you complete habits 💬
-
-Whether you're trying to stretch daily, read more, or drink more water—CrossLife supports your growth, stress-free.
-
----
+This version of CrossLife is fully frontend and stores data locally in the user's browser using `localStorage`. It works offline, loads instantly, and respects user privacy.
 
 ## Tech Stack
 
-| Area              | Technology Used                                      |
-|-------------------|-------------------------------------------------------|
-| Language          | Kotlin Multiplatform (or Flutter with Dart)           |
-| Mobile            | Android (Jetpack Compose or Flutter)                  |
-| Web               | Kotlin/JS with Compose Web (or Flutter Web)           |
-| Local Storage     | SQLite (`sqldelight` for Kotlin, `sqflite` for Flutter) |
-| Optional Backend  | Firebase Firestore (for cloud sync and login)         |
-| UI Design         | Jetpack Compose (or Flutter Widgets)                  |
-| Build System      | Gradle (Kotlin) or Flutter CLI                        |
-
----
+| Area           | Technology Used       |
+|----------------|------------------------|
+| Frontend       | HTML, CSS, JavaScript  |
+| Data Storage   | Browser `localStorage` |
+| Deployment     | GitHub Pages / Netlify |
+| Frameworks     | None (Vanilla only)    |
 
 ## How It Works
 
-1. **Add Habits**  
-   Give your habit a name and description (like "Drink water 💧" or "Stretch for 5 min").
+1. **Add Habit**  
+   Users can create a new habit by entering a name in a simple input form.
 
-2. **Track Progress**  
-   Every day, just tap to check it off. Your progress is saved locally (and online if enabled).
+2. **Display Habits**  
+   All added habits are displayed in a list with buttons to mark each habit as completed for the current day.
 
-3. **Calendar View**  
-   View a simple color-coded calendar to track your consistency.
+3. **Track Daily Completion**  
+   When a habit is marked as completed, today's date is saved under that habit. This data persists across sessions.
 
-4. **Motivation Boost (Optional)**  
-   After marking a habit complete, you'll see a kind, encouraging quote to keep you going!
+4. **Local Data Storage**  
+   All habits and progress are saved in the browser's `localStorage`, requiring no backend or external database.
 
-5. **Offline Support**  
-   No internet? No problem. Your habits and progress are stored on your device.
+5. **Motivational Messages**  
+   After completing a habit, a random motivational message is shown to encourage consistency.
+
+## Possible Future Improvements
+
+- Add visual calendar or streak tracker for each habit
+- Dark mode toggle for accessibility and user comfort
+- Browser notification reminders
+- Data export and import (e.g., JSON backup)
+- Optional Firebase integration for cloud sync and user login
+- PWA (Progressive Web App) support for installable experience
+- Voice input or keyboard shortcuts for quicker interaction
 
 ---
 
-## 🌱 Possible Future Improvements
-
-- **Daily Reminders** with notifications
-- **Streak & Stats Dashboard**
-- **Google Sign-In** and cross-device sync
-- **AI Smart Suggestions** (e.g., habit recommendations)
-- **Custom Themes + Dark Mode**
-- **Voice-Based Habit Logging**
-- **Custom Icons & Emojis for Habits**
-- **Widget Support** for quick check-ins on Android
----
+CrossLife is designed to be a no-friction, privacy-friendly tool to help people stay consistent and motivated in forming habits—no account required.
