@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cross Life</title>
+    <link rel="stylesheet" href="/frontend/style.css">
 </head>
-<body>
-    
-</body>
+    <body>
+        <main class="container">
+            
+            <header>
+                <h1>CrossLife</h1>
+                <p>Track Your Daily Habit, Your Way</p>
+            </header>
+
+            <!-- Add Habit -->
+            <section class="add-habit">
+                <h2>Add New Habit</h2>
+                <form id="habit-form">
+                    <input type="text" id="habit-input" placeholder="e.g. Drink Water" required />
+                    <button type="submit">Add Habit</button>
+                </form>
+            </section>
+
+            <!-- List Habit  -->
+            <section class="habit-list">
+                <h2>Your Habits</h2>
+                <ul id="habit-container">
+                    <!-- list of habit here  -->
+                </ul>
+            </section>
+
+            <!-- Quote  -->
+            <section class="quote">
+                <div id="motivational-quote">
+                    <!-- motivational message here after completion -->
+                </div>
+            </section>
+
+        </main>
+        
+    </body>
 </html>
