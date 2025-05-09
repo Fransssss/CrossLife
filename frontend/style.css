@@ -52,7 +52,7 @@ button {
     transition: transform 0.2s;
 }
 
-button:hover {
+button:not(:disabled):hover {
     background-color: #45a049;
     transform: scale(1.05);
 }
